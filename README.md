@@ -41,7 +41,9 @@ The project builds on the runtime-verification ideas of AgentGuard (runtime insp
 ## System Architecture
 <!--Embed the system architecture diagram as shown below-->
 
-![System Architecture](images/system-architecture.png)
+<img width="2380" height="1430" alt="14_architecture_diagram" src="https://github.com/user-attachments/assets/18854228-a417-412c-8cb9-05cd91d66a28" />
+
+<img width="2380" height="1430" alt="15_flow_diagram" src="https://github.com/user-attachments/assets/9789d3a1-f363-4ec2-ac74-0d4a8f8b8c73" />
 
 Agents propose; the authorization service controls execution. Execution results update the simulator and the history, and all decisions are written to the audit log.
 
@@ -53,8 +55,8 @@ Planned repository layout: `agents/`, `simulator/`, `assurance/` (evidence, unce
 > The outputs below are **illustrative expected outputs**, not screenshots or observed experimental results.
 
 #### Output1 - Cross-agent conflict caught by history-dependent monitoring
+<img width="2380" height="1430" alt="28_output_samples_2" src="https://github.com/user-attachments/assets/6729a88b-12e8-47d8-a442-deebe0692f86" />
 
-![Cross-Agent Conflict Sequence](images/sequence-cross-agent-conflict.png)
 
 #### Output2 - Hazardous route rejected
 
@@ -66,6 +68,7 @@ Authorization : REJECT
 Reason        : HAZARDOUS_ROUTE
 Next step     : Request an alternative route proposal.
 ```
+<img width="2380" height="1430" alt="27_output_examples" src="https://github.com/user-attachments/assets/e51a048e-113e-404e-a62f-7d2e6f9ed7d9" />
 
 #### Output3 - High-impact action escalated
 
@@ -84,6 +87,7 @@ Proposal B    : Assign Medical Unit 1 to Incident 9
 Authorization : REJECT
 Reason        : RESOURCE_CONFLICT
 ```
+<img width="2380" height="1430" alt="29_output_samples_3" src="https://github.com/user-attachments/assets/e16ac3d4-9b8d-4e74-996a-7ab32f17da6a" />
 
 Detection Accuracy / Unsafe episode rate / Task completion: **Not measured yet** (experiments still to be run). The final results will report the number of episodes, model configuration, seeds and confidence intervals.
 
